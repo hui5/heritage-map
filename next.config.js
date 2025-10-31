@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const withRspack = require("next-rspack");
 
 const nextConfig = {
   // 开发模式下不使用静态导出
@@ -37,15 +36,15 @@ const nextConfig = {
     NEXT_PUBLIC_GIT_COMMIT:
       process.env.VERCEL_GIT_COMMIT_SHA?.substring(0, 7) || "local",
   },
-  webpack: (config) => {
-    // 确保 JSON 文件能够被正确处理并支持热重载
-    config.module.rules.push({
-      test: /\.json$/,
-      type: "json",
-    });
+  // webpack: (config) => {
+  //   // 确保 JSON 文件能够被正确处理并支持热重载
+  //   config.module.rules.push({
+  //     test: /\.json$/,
+  //     type: "json",
+  //   });
 
-    return config;
-  },
+  //   return config;
+  // },
   async rewrites() {
     return [
       {
@@ -75,4 +74,4 @@ const nextConfig = {
 
 const ONE_MONTH = 60 * 60 * 24 * 30; // 2592000
 
-module.exports = withRspack(nextConfig);
+module.exports = nextConfig;

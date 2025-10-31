@@ -189,9 +189,6 @@ importers:
       mapbox-gl:
         specifier: ^3.16.0
         version: 3.16.0
-      next-rspack:
-        specifier: ^16.0.1
-        version: 16.0.1(@swc/helpers@0.5.15)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.101.3)
@@ -747,76 +744,6 @@ packages:
 
   '@next/eslint-plugin-next@14.2.32':
     resolution: {integrity: sha512-tyZMX8g4cWg/uPW4NxiJK13t62Pab47SKGJGVZJa6YtFwtfrXovH4j1n9tdpRdXW03PGQBugYEVGM7OhWfytdA==}
-
-  '@next/rspack-binding-android-arm-eabi@1.0.0':
-    resolution: {integrity: sha512-goiM4M2ZlT82qtR8e7X3fwYGBBJ4DdaIkMGLa1rgSclyNXvb5mOhiSug+FgzrLsYl0O0UAO7GCMuyiF2hD5nmA==}
-    cpu: [arm]
-    os: [android]
-
-  '@next/rspack-binding-android-arm64@1.0.0':
-    resolution: {integrity: sha512-uJUI5c83lGuQMber8edNnYHB4AXFqb+cT/QHmzxup2U0A+Y8TZ25G2myUk09VtewbrJtWthNEETRdAUmhevKHQ==}
-    cpu: [arm64]
-    os: [android]
-
-  '@next/rspack-binding-darwin-arm64@1.0.0':
-    resolution: {integrity: sha512-nv7iYARccfbVGftd3udk6/HOp0gCRgM1jyWZpfXenc3WpE8PbC0YXDIC8G0Px3vBEbGLItnOdRTLwQJ8dPgjAg==}
-    cpu: [arm64]
-    os: [darwin]
-
-  '@next/rspack-binding-darwin-x64@1.0.0':
-    resolution: {integrity: sha512-xB7RUZZnGNJ1t75IbzgdHWZJa6fijsfR9YbQ1eD0ppgMrXr9EcM+FDs0HFvg/nZqCI0PtA3j2Q+mePsJ8hy5ow==}
-    cpu: [x64]
-    os: [darwin]
-
-  '@next/rspack-binding-linux-arm-gnueabihf@1.0.0':
-    resolution: {integrity: sha512-59HIy5ysp7eoWW6Cg1VvCtRoBJv+zPNZQVvQH9wyjOMDVL7L53g9AsgCgHGlM5rmBZ6MGYb+ToKtOUf2AvsfNw==}
-    cpu: [arm]
-    os: [linux]
-
-  '@next/rspack-binding-linux-arm64-gnu@1.0.0':
-    resolution: {integrity: sha512-KTs4iGsx5+9VIxAjyHPnXjGF2NyQZw4XrWECat+aSsUPf6lhEaLy16Tktj8VIGMDUAJRweqX//n4Pey7eHPOVQ==}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
-  '@next/rspack-binding-linux-arm64-musl@1.0.0':
-    resolution: {integrity: sha512-cO14QgCFeTPGD6NyKnFR7AB7HmyZ6bWNCB++jfh8L8A7yYnjv2hVnnWuh4yv98dY5Bq8fTSOq815SU8Zjs5vaQ==}
-    cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
-  '@next/rspack-binding-linux-x64-gnu@1.0.0':
-    resolution: {integrity: sha512-a6fJNbAZgeHtWRFs2QYNEwQuDCJAs28loS+b/jzgMgbz4NlbYtqT9IAtMsab8mq3MLOGdL1LB8X74pYpF4bSGg==}
-    cpu: [x64]
-    os: [linux]
-    libc: [glibc]
-
-  '@next/rspack-binding-linux-x64-musl@1.0.0':
-    resolution: {integrity: sha512-hr5F5A3gUK+h1E+KLWfTE3ba/N8ZusyVZc5hTmVxWQ3391zAaifzLSndwjaU46V8pdR/y77cUpYKLLFhQMkR1g==}
-    cpu: [x64]
-    os: [linux]
-    libc: [musl]
-
-  '@next/rspack-binding-win32-arm64-msvc@1.0.0':
-    resolution: {integrity: sha512-cT7KTW/Sl72MTE+0q06XTkVH777oElqs73yfSYmZtDxt54umMlLrYC2lPzz/7XuXpxsbukwdwlq2s609oVhDsw==}
-    cpu: [arm64]
-    os: [win32]
-
-  '@next/rspack-binding-win32-ia32-msvc@1.0.0':
-    resolution: {integrity: sha512-nSED7pwgQImgg9tlR+YT/uumzdxtQxaGItxobZOr5H8NcKpCLdKx8/1yHYs1ZhX8q7EEA6FjzUOKvj0gqPmf/g==}
-    cpu: [ia32]
-    os: [win32]
-
-  '@next/rspack-binding-win32-x64-msvc@1.0.0':
-    resolution: {integrity: sha512-2Ae6om/kWa/HyzsH7/39B1c06zT+bNb3lGuzJh5dmHzX6L1KAGnSaA6cLn4RQ9i6GO5DAVGlzPfeZ+ubrt4fCA==}
-    cpu: [x64]
-    os: [win32]
-
-  '@next/rspack-binding@1.0.0':
-    resolution: {integrity: sha512-xuIlzwlL2dFOQ/hw1wEt674Q5QtaDJOCtyO8ncxsxHjBMcuaoI17gB1969VEp3VE5yOjv4qTFY1IpDBGmxe8zw==}
-
-  '@next/rspack-core@1.0.0':
-    resolution: {integrity: sha512-uUnVS//Pq/+RY/AsmVSRDQD0gs4Q8tJTe9YIMlmZgJxtDAykUag7CxHFSwuLj69OZMM1n0k/DFfDq8elfVMVsA==}
 
   '@next/swc-darwin-arm64@16.0.2-canary.2':
     resolution: {integrity: sha512-9i86aOiw0nxMbPc/waMZPCHhTfH7ZieiF7tg64vMo7T+Ky0C6AeIJLZvnzaSzqUSrQXJallD4rWqopaPzWXVUA==}
@@ -3356,9 +3283,6 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  next-rspack@16.0.1:
-    resolution: {integrity: sha512-mFPxbIFYqkRRxYGGqqNwedQC1zYFdKvrn5A4Ne0p+xI8ptCl5rPJt9iBzacgCbdrt3Ie7Y4NYrfik3vKmB8ypA==}
-
   next@16.0.2-canary.2:
     resolution: {integrity: sha512-C/R92ROliWUjpzHCvDhl1qREj7Dja7/O3fkgOXG1vGCw7P0+aZ8Ag6ecdZxwvc7m5mZifc0GVYZ4U8sOVn5dhw==}
     engines: {node: '>=20.9.0'}
@@ -4925,30 +4849,36 @@ snapshots:
 
   '@mapbox/whoots-js@3.1.0': {}
 
-  '@module-federation/error-codes@0.18.0': {}
+  '@module-federation/error-codes@0.18.0':
+    optional: true
 
   '@module-federation/runtime-core@0.18.0':
     dependencies:
       '@module-federation/error-codes': 0.18.0
       '@module-federation/sdk': 0.18.0
+    optional: true
 
   '@module-federation/runtime-tools@0.18.0':
     dependencies:
       '@module-federation/runtime': 0.18.0
       '@module-federation/webpack-bundler-runtime': 0.18.0
+    optional: true
 
   '@module-federation/runtime@0.18.0':
     dependencies:
       '@module-federation/error-codes': 0.18.0
       '@module-federation/runtime-core': 0.18.0
       '@module-federation/sdk': 0.18.0
+    optional: true
 
-  '@module-federation/sdk@0.18.0': {}
+  '@module-federation/sdk@0.18.0':
+    optional: true
 
   '@module-federation/webpack-bundler-runtime@0.18.0':
     dependencies:
       '@module-federation/runtime': 0.18.0
       '@module-federation/sdk': 0.18.0
+    optional: true
 
   '@nanostores/react@git+https://github.com/ai/react.git#a6ad745cc307881916944ee4d6ba04bdda978dc6(nanostores@1.0.1)(react@19.2.0)':
     dependencies:
@@ -4974,64 +4904,6 @@ snapshots:
   '@next/eslint-plugin-next@14.2.32':
     dependencies:
       glob: 10.3.10
-
-  '@next/rspack-binding-android-arm-eabi@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-android-arm64@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-darwin-arm64@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-darwin-x64@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-linux-arm-gnueabihf@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-linux-arm64-gnu@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-linux-arm64-musl@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-linux-x64-gnu@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-linux-x64-musl@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-win32-arm64-msvc@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-win32-ia32-msvc@1.0.0':
-    optional: true
-
-  '@next/rspack-binding-win32-x64-msvc@1.0.0':
-    optional: true
-
-  '@next/rspack-binding@1.0.0':
-    optionalDependencies:
-      '@next/rspack-binding-android-arm-eabi': 1.0.0
-      '@next/rspack-binding-android-arm64': 1.0.0
-      '@next/rspack-binding-darwin-arm64': 1.0.0
-      '@next/rspack-binding-darwin-x64': 1.0.0
-      '@next/rspack-binding-linux-arm-gnueabihf': 1.0.0
-      '@next/rspack-binding-linux-arm64-gnu': 1.0.0
-      '@next/rspack-binding-linux-arm64-musl': 1.0.0
-      '@next/rspack-binding-linux-x64-gnu': 1.0.0
-      '@next/rspack-binding-linux-x64-musl': 1.0.0
-      '@next/rspack-binding-win32-arm64-msvc': 1.0.0
-      '@next/rspack-binding-win32-ia32-msvc': 1.0.0
-      '@next/rspack-binding-win32-x64-msvc': 1.0.0
-
-  '@next/rspack-core@1.0.0(@swc/helpers@0.5.15)':
-    dependencies:
-      '@next/rspack-binding': 1.0.0
-      '@rspack/core': 1.5.0(@swc/helpers@0.5.15)
-    transitivePeerDependencies:
-      - '@swc/helpers'
 
   '@next/swc-darwin-arm64@16.0.2-canary.2':
     optional: true
@@ -5183,6 +5055,7 @@ snapshots:
       '@rspack/binding-win32-arm64-msvc': 1.5.0
       '@rspack/binding-win32-ia32-msvc': 1.5.0
       '@rspack/binding-win32-x64-msvc': 1.5.0
+    optional: true
 
   '@rspack/core@1.5.0(@swc/helpers@0.5.15)':
     dependencies:
@@ -5191,8 +5064,10 @@ snapshots:
       '@rspack/lite-tapable': 1.0.1
     optionalDependencies:
       '@swc/helpers': 0.5.15
+    optional: true
 
-  '@rspack/lite-tapable@1.0.1': {}
+  '@rspack/lite-tapable@1.0.1':
+    optional: true
 
   '@rtsao/scc@1.1.0': {}
 
@@ -7448,7 +7323,7 @@ snapshots:
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint@8.57.1))(eslint@8.57.1)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.57.1)
       eslint-plugin-react: 7.37.5(eslint@8.57.1)
       eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705(eslint@8.57.1)
@@ -7478,7 +7353,7 @@ snapshots:
       tinyglobby: 0.2.14
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -7493,7 +7368,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.41.0(eslint@8.57.1)(typescript@5.9.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -8723,12 +8598,6 @@ snapshots:
   natural-compare@1.4.0: {}
 
   neo-async@2.6.2: {}
-
-  next-rspack@16.0.1(@swc/helpers@0.5.15):
-    dependencies:
-      '@next/rspack-core': 1.0.0(@swc/helpers@0.5.15)
-    transitivePeerDependencies:
-      - '@swc/helpers'
 
   next@16.0.2-canary.2(@opentelemetry/api@1.9.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
