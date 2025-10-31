@@ -31,7 +31,7 @@ export function LoadingOverlay({ styleReady }: LoadingOverlayProps) {
           <LoadingSpinner size="lg" className="mx-auto block" />
           <div className="space-y-2">
             <h3 className="text-lg font-semibold text-gray-800">
-              上海历史建筑地图
+              历史建筑地图
             </h3>
             <p className="text-gray-600">正在渲染地图，请稍候...</p>
             {/* 服务端渲染时也预留进度显示区域，保持布局一致性 */}
@@ -58,9 +58,7 @@ export function LoadingOverlay({ styleReady }: LoadingOverlayProps) {
       <div className="text-center space-y-4">
         <LoadingSpinner size="lg" className="mx-auto block" />
         <div className="space-y-2">
-          <h3 className="text-lg font-semibold text-gray-800">
-            上海历史建筑地图
-          </h3>
+          <h3 className="text-lg font-semibold text-gray-800">历史建筑地图</h3>
           <p className="text-gray-600">正在渲染地图，请稍候...</p>
           {/* 固定高度的进度显示区域，避免布局跳动 */}
           <div className="h-6 flex items-center justify-center min-w-0">

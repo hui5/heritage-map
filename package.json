@@ -1,7 +1,7 @@
 {
-  "name": "shanghai-heritage-map",
-  "version": "1.0.0",
-  "description": "上海历史建筑地图",
+  "name": "heritage-map",
+  "version": "2.0.0",
+  "description": "历史建筑地图",
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",

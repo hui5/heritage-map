@@ -14,8 +14,8 @@ interface ShareButtonProps {
 
 export const ShareButton: React.FC<ShareButtonProps> = ({
   url = typeof window !== "undefined" ? window.location.href : "",
-  title = "上海历史建筑地图",
-  description = "探索上海的历史建筑与文化遗产",
+  title = "历史建筑地图",
+  description = "探索历史建筑与文化遗产",
   className = "",
   variant = "default",
 }) => {
