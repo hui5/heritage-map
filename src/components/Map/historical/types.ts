@@ -143,6 +143,8 @@ export interface DataSubtype {
   id: string;
   name: string;
   dataFile: string;
+  sourceId?: string;
+  sourceLayer?: string;
   geometryType: "Point" | "LineString" | "Polygon";
   enabled: boolean;
   priority?: number; // 建筑专用：优先级

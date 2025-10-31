@@ -19,6 +19,7 @@ export interface SubtypeData {
   category: DataCategory;
   data: { type: "FeatureCollection"; features: GeoJSON.Feature[] };
   sourceId: string;
+  sourceLayer?: string;
   layers: string[];
   visible: boolean;
 }
@@ -38,9 +39,10 @@ config.categories.forEach((category) => {
     const subtypeData: SubtypeData = {
       id: subtype.id,
       subtype,
+      sourceId: subtype.sourceId || `openda_${dataType}-${subtype.id}-source`,
+      sourceLayer: subtype.sourceLayer,
       category,
       data: { type: "FeatureCollection", features: ref([]) },
-      sourceId: `openda_${dataType}-${subtype.id}-source`,
       layers: [],
       visible: category.enabled && subtype.enabled,
     };
@@ -54,6 +56,7 @@ config.categories.forEach((category) => {
 state.subtypeDatas.reverse();
 
 _(state.subtypeDatas)
+  .filter((subtypeData) => !subtypeData.subtype.sourceId)
   .groupBy((subtypeData) => subtypeData.subtype.dataFile)
   .forEach((group, dataFile: string) => {
     state.loading.processing.push(dataFile);

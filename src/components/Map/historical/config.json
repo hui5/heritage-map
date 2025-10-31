@@ -714,7 +714,8 @@
         {
           "id": "osm_buildings",
           "name": "OSM 建筑数据",
-          "dataFile": "openstreetmap.geojson",
+          "sourceId": "hui5.c7upobnp",
+          "sourceLayer": "openstreetmap-5ncoo2",
           "geometryType": "Polygon",
           "enabled": true,
           "coordinateSystem": "wgs84",

@@ -19,20 +19,28 @@ export const HistoricalLayers = ({
       const interactionIds: string[] = [];
 
       state.subtypeDatas.forEach((subtypeData) => {
-        const { id, subtype, sourceId, layers, data } = subtypeData;
+        const { id, subtype, sourceId, sourceLayer, layers, data } =
+          subtypeData;
 
         subtypeData.layers = [];
 
         mapInstance.U.removeSource(sourceId);
 
-        mapInstance.addSource(sourceId, {
-          type: "geojson",
-          data: {
-            type: "FeatureCollection",
-            features: [],
-          },
-          generateId: true,
-        });
+        if (sourceId.startsWith("hui5.")) {
+          mapInstance.addSource(sourceId, {
+            type: "vector",
+            url: `mapbox://${sourceId}`,
+          });
+        } else {
+          mapInstance.addSource(sourceId, {
+            type: "geojson",
+            data: {
+              type: "FeatureCollection",
+              features: [],
+            },
+            generateId: true,
+          });
+        }
 
         // 使用配置化的图层创建
         const layerConfigs = generateHistoricalLayerConfig(
@@ -47,6 +55,9 @@ export const HistoricalLayers = ({
           layerConfig.layout.visibility = subtypeData.visible
             ? "visible"
             : "none";
+          if (sourceLayer) {
+            layerConfig["source-layer"] = sourceLayer;
+          }
           const layerId = layerConfig.id;
           mapInstance.addLayer(layerConfig);
           subtypeData.layers.push(layerId);
